@@ -17,6 +17,7 @@ pipeline {
         stage('Integration Test') {
           steps {
             echo 'Integration Test done!'
+            echo 'Integration Test done 2!'
           }
         }
         stage('Unit Tests') {
@@ -27,6 +28,11 @@ pipeline {
         stage('Smoke Test') {
           steps {
             echo 'Smoke Tests done!'
+          }
+        }
+        stage('Performance Tests') {
+          steps {
+            echo 'Performance Tests done!'
           }
         }
       }
