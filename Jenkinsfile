@@ -17,6 +17,7 @@ pipeline {
         stage('Integration Test') {
           steps {
             echo 'Integration Test done!'
+            echo 'Integration Test done 2!'
           }
         }
         stage('Unit Tests') {
